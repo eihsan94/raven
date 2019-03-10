@@ -1,0 +1,16 @@
+{
+  "name": "01_drum_kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01_drum_kit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "eslint-config-google": "^0.12.0"
+  }
+}

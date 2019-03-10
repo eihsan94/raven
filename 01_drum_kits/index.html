@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./01_drum_kit.js"></script>
+</head>
+
+<body>
+    <audio id="clap" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Claps/12[kb]brightclap2.aif.mp3"></audio>
+    <audio id="hihat" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Hats/39[kb]707-ohh.aif.mp3"></audio>
+    <audio id="kick" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Kicks/18[kb]action-kick.wav.mp3"></audio>
+    <audio id="openhat" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Hats/16[kb]brighterchh.aif.mp3"></audio>
+    <audio id="boom" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Punches%20Hits%20Discoblasts/32[kb]basspunch.aif.mp3"></audio>
+    <audio id="ride" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Rides/8[kb]909-cut-through-ride.aif.mp3"></audio>
+    <audio id="snair" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Melodic%20Stabs%20and%20Hits/15[kb]mildstab.aif.mp3"></audio>
+    <audio id="tom" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Toms/33[kb]distortotom.aif.mp3"></audio>
+    <audio id="tink" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Electronic%20Hits/12[kb]badtekno.aif.mp3"></audio>
+
+    <div class="main-container">
+        <div class="keybox" onclick="playSound('clap')">
+            <div class="box-contents">
+                <div class="box-title">
+                    A
+                </div>
+                <div class="box-subtitle">
+                    CLAP
+                </div>
+            </div>
+        </div>
+                <div class="keybox" onclick="playSound('hihat')">
+            <div class="box-contents">
+                <div class="box-title">
+                    S
+                </div>
+                <div class="box-subtitle">
+                    HIHAT
+                </div>
+            </div>
+        </div>
+                <div class="keybox" onclick="playSound('kick')">
+            <div class="box-contents">
+                <div class="box-title">
+                    D
+                </div>
+                <div class="box-subtitle">
+                    KICK
+                </div>
+            </div>
+        </div>
+                <div class="keybox" onclick="playSound('openhat')">
+            <div class="box-contents">
+                <div class="box-title">
+                    F
+                </div>
+                <div class="box-subtitle">
+                    OPENHAT
+                </div>
+            </div>
+        </div>
+                <div class="keybox" onclick="playSound('boom')">
+            <div class="box-contents">
+                <div class="box-title">
+                    G
+                </div>
+                <div class="box-subtitle">
+                    BOOM
+                </div>
+            </div>
+        </div>
+                <div class="keybox" onclick="playSound('ride')">
+            <div class="box-contents">
+                <div class="box-title">
+                    H
+                </div>
+                <div class="box-subtitle">
+                    RIDE
+                </div>
+            </div>
+        </div>
+                <div class="keybox" onclick="playSound('snair')">
+            <div class="box-contents">
+                <div class="box-title">
+                    J
+                </div>
+                <div class="box-subtitle">
+                    SNAIR
+                </div>
+            </div>
+        </div>
+                <div class="keybox" onclick="playSound('tom')">
+            <div class="box-contents">
+                <div class="box-title">
+                    K
+                </div>
+                <div class="box-subtitle">
+                    TOM
+                </div>
+            </div>
+        </div>
+                <div class="keybox" onclick="playSound('tink')">
+            <div class="box-contents">
+                <div class="box-title">
+                    L
+                </div>
+                <div class="box-subtitle">
+                    TINK
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
