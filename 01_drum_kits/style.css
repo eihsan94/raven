@@ -44,5 +44,8 @@
 }
 .box-contents:active {
     font-size: 20px;
-
+}
+.pressed {
+    font-size: 20px;
+    border-color: yellow;
 }

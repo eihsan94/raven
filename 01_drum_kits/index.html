@@ -11,18 +11,18 @@
 </head>
 
 <body>
-    <audio id="clap" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Claps/12[kb]brightclap2.aif.mp3"></audio>
-    <audio id="hihat" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Hats/39[kb]707-ohh.aif.mp3"></audio>
-    <audio id="kick" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Kicks/18[kb]action-kick.wav.mp3"></audio>
-    <audio id="openhat" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Hats/16[kb]brighterchh.aif.mp3"></audio>
-    <audio id="boom" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Punches%20Hits%20Discoblasts/32[kb]basspunch.aif.mp3"></audio>
-    <audio id="ride" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Rides/8[kb]909-cut-through-ride.aif.mp3"></audio>
-    <audio id="snair" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Melodic%20Stabs%20and%20Hits/15[kb]mildstab.aif.mp3"></audio>
-    <audio id="tom" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Toms/33[kb]distortotom.aif.mp3"></audio>
-    <audio id="tink" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Electronic%20Hits/12[kb]badtekno.aif.mp3"></audio>
+    <audio id="a" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Claps/12[kb]brightclap2.aif.mp3"></audio>
+    <audio id="s" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Hats/39[kb]707-ohh.aif.mp3"></audio>
+    <audio id="d" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Kicks/18[kb]action-kick.wav.mp3"></audio>
+    <audio id="f" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Hats/16[kb]brighterchh.aif.mp3"></audio>
+    <audio id="g" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Punches%20Hits%20Discoblasts/32[kb]basspunch.aif.mp3"></audio>
+    <audio id="h" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Rides/8[kb]909-cut-through-ride.aif.mp3"></audio>
+    <audio id="j" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Melodic%20Stabs%20and%20Hits/15[kb]mildstab.aif.mp3"></audio>
+    <audio id="k" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Toms/33[kb]distortotom.aif.mp3"></audio>
+    <audio id="l" src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Electronic%20Hits/12[kb]badtekno.aif.mp3"></audio>
 
     <div class="main-container">
-        <div class="keybox" onclick="playSound('clap')">
+        <div class="keybox" id="a-box" onclick="playSound('a')">
             <div class="box-contents">
                 <div class="box-title">
                     A
@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-                <div class="keybox" onclick="playSound('hihat')">
+        <div class="keybox" id="s-box" onclick="playSound('s')">
             <div class="box-contents">
                 <div class="box-title">
                     S
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-                <div class="keybox" onclick="playSound('kick')">
+        <div class="keybox" id="d-box" onclick="playSound('d')">
             <div class="box-contents">
                 <div class="box-title">
                     D
@@ -52,7 +52,7 @@
                 </div>
             </div>
         </div>
-                <div class="keybox" onclick="playSound('openhat')">
+        <div class="keybox" id="f-box" onclick="playSound('f')">
             <div class="box-contents">
                 <div class="box-title">
                     F
@@ -62,7 +62,7 @@
                 </div>
             </div>
         </div>
-                <div class="keybox" onclick="playSound('boom')">
+        <div class="keybox" id="g-box" onclick="playSound('g')">
             <div class="box-contents">
                 <div class="box-title">
                     G
@@ -72,7 +72,7 @@
                 </div>
             </div>
         </div>
-                <div class="keybox" onclick="playSound('ride')">
+        <div class="keybox" id="h-box" onclick="playSound('h')">
             <div class="box-contents">
                 <div class="box-title">
                     H
@@ -82,7 +82,7 @@
                 </div>
             </div>
         </div>
-                <div class="keybox" onclick="playSound('snair')">
+        <div class="keybox" id="j-box" onclick="playSound('j')">
             <div class="box-contents">
                 <div class="box-title">
                     J
@@ -92,7 +92,7 @@
                 </div>
             </div>
         </div>
-                <div class="keybox" onclick="playSound('tom')">
+        <div class="keybox" id="k-box" onclick="playSound('k')">
             <div class="box-contents">
                 <div class="box-title">
                     K
@@ -102,7 +102,7 @@
                 </div>
             </div>
         </div>
-                <div class="keybox" onclick="playSound('tink')">
+        <div class="keybox" id="l-box" onclick="playSound('l')">
             <div class="box-contents">
                 <div class="box-title">
                     L
