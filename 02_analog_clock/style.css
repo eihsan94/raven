@@ -23,28 +23,8 @@
     /* バックイメージの指定 */
 }
 
-/* .clock-face {
-    background: rgba(255, 250, 100, 0.7);
-    
-    border-radius: 50%;
-} */
-.clock-face {
-    width: 30em;
-    height: 30em;
-}
-
 #clock-face {
-    stroke: black;
-    stroke-width: 2px;
-    fill: white;
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    font-size: 24px;
+    fill: #20B7AF;
 }
 
 
@@ -52,7 +32,7 @@
 #m-hand,
 #s-hand,
 #s-tail {
-    stroke: black;
+    stroke: #ffffff;
     stroke-linecap: round;
 }
 
@@ -71,3 +51,11 @@
 .time-text {
     text-align: center;
 }
+#tick {
+    stroke: whitesmoke;
+    stroke-width: 3px;   
+}
+
+
+
+
