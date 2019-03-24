@@ -1,32 +1,47 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable require-jsdoc */
+function clock() {
+  // calculate angle
+  const d = new Date;
+  let h = 30 * ((d.getHours() % 12) + d.getMinutes() / 60);
+  const m = 6 * d.getMinutes();
+  const s = 6 * d.getSeconds();
+  console.log(h);
+  // move hands
+  setAttr('h-hand', h);
+  setAttr('m-hand', m);
+  setAttr('s-hand', s);
+  setAttr('s-tail', s+180);
 
-// カーソルからのクリック
-/**
- * Play sound base on the soundName.
- * @param {string} keyboardLetter The sound type.
- */
-function playSound(keyboardLetter) {
-  const audio = document.getElementById(keyboardLetter);
-  audio.currentTime = 0; // reset the play time
-  audio.play();
+  if (h !== 12) {
+    h %= 12;
+  }
+
+  // call every second
+  setTimeout(clock, 1000);
+};
+
+function setAttr(id, val) {
+  const v = 'rotate(' + val + ', 140, 140)';
+  document.getElementById(id).setAttribute('transform', v);
+};
+
+// 全てのウェブ部分が表示された時に動かす初期化の関数
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('All assets are loaded');
+  clock();
+});
+
+let x;
+let y;
+const rad = 140;
+const divisions = 12;
+const degreesPerIter = 360 / divisions;
+const startAngleDeg = 90;
+for (i = 1; i < divisions + 1; i++) {
+  const angleDeg = (startAngleDeg + (i * degreesPerIter)) % 360;
+
+  x = rad * Math.cos(angleDeg * Math.PI/180);
+  console.log((angleDeg));
+  y = rad * Math.sin(angleDeg * Math.PI/180);
+  console.log(`coordinates of the 12 o'clock mark are ${i} o'clock (${x}, ${y}) `);
 }
-
-// KEYBOARDからのイベント
-document.addEventListener('keydown', (event) => { // 押すときのイベント
-  const key = (event.key || event.keyCode).toLowerCase();
-  const audio = document.getElementById(key);
-  const keybox = document.getElementById(`${key}-box`);
-  if (audio) {
-    audio.currentTime = 0; // reset the play time
-    audio.play();
-    keybox.classList.add('pressed');
-  }
-});
-document.addEventListener('keyup', (event) => {// 離すときのイベント
-  const key = (event.key || event.keyCode).toLowerCase();
-  const audio = document.getElementById(key);
-  const keybox = document.getElementById(`${key}-box`);
-  if (audio) {
-    keybox.classList.remove('pressed');
-  }
-});
