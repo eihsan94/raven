@@ -1,0 +1,51 @@
+.main-container {
+    display: flex; /* flex boxの指定 */
+    align-items: center;  /* y軸を指定する */
+    justify-content: center; /* x軸を指定する */
+    width: 100vw;   /* 箱横幅指定 */
+    height: 100vh;  /* 箱縦幅指定 */
+    background-image: url("./image/background.jpg");  /* バックイメージの指定 */
+    background-repeat: no-repeat, repeat; /* バックイメージの指定 */
+    -webkit-background-size: cover; /* バックイメージの指定 */
+    -moz-background-size: cover;  /* バックイメージの指定 */
+    -o-background-size: cover;   /* バックイメージの指定 */
+    background-size: cover;      /* バックイメージの指定 */
+}
+.keybox {
+    color: antiquewhite;
+    width: 5em;
+    height: 5em;
+    margin-left: 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+.box-contents {
+    height: 100%;
+    width: 100%;
+}
+.box-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    font-size: 2em;
+}
+.box-subtitle {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.keybox:active {
+    border-color: yellow;
+
+}
+.box-contents:active {
+    font-size: 20px;
+}
+.pressed {
+    font-size: 20px;
+    border-color: yellow;
+}
