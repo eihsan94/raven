@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Analog Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./03_image_filter.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="image-filter-controller">
+            <div class="spacing-controller">
+                Spacing:
+                <input class="margin-left-10px" type="range" min="1" max="100" value="0" onchange="spacingChange(event)">
+            </div>
+            <div class="blur-controller">
+                Blur:
+                <input class="margin-left-10px" type="range" min="1" max="20" value="0" onchange="blurChange(event)">
+            </div>
+            <div class="bg-color-controller">
+                Base Color:
+                <input type="color" name="favcolor" value="#ff0000" onchange="colorChange(event)">
+            </div>
+        </div>
+        <div class="image-container" >
+            <div class="image"></div>
+        </div>
+    </div>
+</body>
+
+</html>
